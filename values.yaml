@@ -1,0 +1,10 @@
+serviceMonitor:
+  processExporter:
+    enabled: true
+    ### interval for scrape
+    #interval: "10s"
+    jobLabel: "process-exporter"
+    metricRelabelings: []
+    relabelings: []
+
+  
