@@ -1,4 +1,8 @@
+prometheus:
+  crdApiGroup: "monitoring.coreos.com"
+
 serviceMonitor:
+  namespace: lma
   processExporter:
     enabled: true
     ### interval for scrape
@@ -7,4 +11,23 @@ serviceMonitor:
     metricRelabelings: []
     relabelings: []
 
-  
+  grafana:
+    enabled: true
+    ### interval for scrape
+    #interval: "10s"
+    jobLabel: "grafana"
+    metricRelabelings: []
+    relabelings: []
+
+grafanaDashboard:
+  enable: true
+  # namespace installed grafana
+  namespace: fed
+  sidecar:
+    dashboards:
+      enabled: true
+      label: grafana_dashboard
+    datasources:
+      enabled: true
+      label: grafana_datasource
+      prometheusAddress: "lma-prometheus-fed-master-prometheus:9090" 
