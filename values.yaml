@@ -2,7 +2,7 @@ prometheus:
   crdApiGroup: "monitoring.coreos.com"
 
 serviceMonitor:
-  namespace: lma
+  enabled: true
   processExporter:
     enabled: true
     ### interval for scrape

@@ -1,9 +1,8 @@
-{{- if and .Values.serviceMonitor.grafana.enabled }}
+{{- if and .Values.serviceMonitor.enabled .Values.serviceMonitor.grafana.enabled }}
 apiVersion: {{ printf "%s/v1" (.Values.prometheus.crdApiGroup | default "monitoring.coreos.com") }}
 kind: ServiceMonitor
 metadata:
   name: grafana
-  namespace: {{ printf "%s" (.Values.serviceMonitor.namespace | default .Release.Namespace) }}
   labels:
     app: grafana
 spec:

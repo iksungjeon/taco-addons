@@ -1,4 +1,4 @@
-{{- if .Values.serviceMonitor.processExporter.enabled }}
+{{- if and .Values.serviceMonitor.enabled .Values.serviceMonitor.processExporter.enabled }}
 apiVersion: {{ printf "%s/v1" (.Values.prometheus.crdApiGroup | default "monitoring.coreos.com") }}
 kind: ServiceMonitor
 metadata:
