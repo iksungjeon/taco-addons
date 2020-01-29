@@ -1,3 +1,4 @@
+{{- if .Values.grafanaDashboard.enabled }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -950,3 +951,4 @@ data:
         "uid": "85a562078cdf77779eaa1add43ccec1e",
         "version": 0
     }
+{{- end }}
