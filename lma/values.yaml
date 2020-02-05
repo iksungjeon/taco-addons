@@ -20,7 +20,7 @@ serviceMonitor:
     relabelings: []
 
 grafanaDashboard:
-  enable: true
+  enabled: true
   # namespace installed grafana
   namespace: fed
   sidecar:
