@@ -31,3 +31,40 @@ grafanaDashboard:
       enabled: true
       label: grafana_datasource
       prometheusAddress: "lma-prometheus-fed-master-prometheus:9090" 
+
+metricbeat:
+  enabled: true
+  image: docker.elastic.co/beats/metricbeat:7.4.2
+
+  ### metricbeat loglevel
+  loglevel: info
+
+  elasticsearch:
+    host: "https://elasticsearch-monitoring-es-http:9200"
+    username: taco
+    password: password
+    verification_mode: none
+
+  kibana:
+    host: "kibana-dashboard-kb-http:5601"
+
+  ### resources for metricbeat deployment 
+  # resources:
+  #   requests:
+  #     memory: "500Mi"
+  #     cpu: "250m"
+  #   limits:
+  #     memory: "500Mi"
+  #     cpu: "500m"  
+  
+  ### collect metrics from prometheus and save into elasticsearch
+  prometheus:
+    enabled: true
+    hosts: ["192.168.48.202:30018"]
+
+  additionalModules:
+    - module: kubernetes
+      enabled: true
+      metricsets: ["event"]
+      period: 10s
+
