@@ -23,6 +23,10 @@ serviceMonitor:
     mon_hosts:
     - ip: 192.168.97.118
 
+  kubeStateMetrics:
+    enabled: true
+    interval: "30s"
+
   grafana:
     enabled: true
     ### interval for scrape
