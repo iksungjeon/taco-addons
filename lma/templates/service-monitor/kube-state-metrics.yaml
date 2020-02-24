@@ -10,20 +10,20 @@ spec:
   jobLabel: app.kubernetes.io/name
   endpoints:
   - port: http
-    {{- if .Values.kubeStateMetrics.serviceMonitor.interval }}
-    interval: {{ .Values.kubeStateMetrics.serviceMonitor.interval }}
+    {{- if .Values.serviceMonitor.kubeStateMetrics.interval }}
+    interval: {{ .Values.serviceMonitor.kubeStateMetrics.interval }}
     {{- end }}
     honorLabels: true
-{{- if .Values.kubeStateMetrics.serviceMonitor.metricRelabelings }}
+{{- if .Values.serviceMonitor.kubeStateMetrics.metricRelabelings }}
     metricRelabelings:
 {{ tpl (toYaml .Values.kubeStateMetrics.serviceMonitor.metricRelabelings | indent 4) . }}
 {{- end }}
-{{- if .Values.kubeStateMetrics.serviceMonitor.relabelings }}
+{{- if .Values.serviceMonitor.kubeStateMetrics.relabelings }}
     relabelings:
-{{ toYaml .Values.kubeStateMetrics.serviceMonitor.relabelings | indent 4 }}
+{{ toYaml .Values.serviceMonitor.kubeStateMetrics.relabelings | indent 4 }}
 {{- end }}
   namespaceSelector:
-    matchLabels:
+    matchNames:
     - {{ $.Release.Namespace }}
   selector:
     matchLabels:

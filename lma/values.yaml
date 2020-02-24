@@ -23,7 +23,13 @@ serviceMonitor:
     mon_hosts:
     - ip: 192.168.97.118
 
+  ## KubeStateMetrics ServiceMonitor
   kubeStateMetrics:
+    enabled: true
+    interval: "30s"
+
+  ## NodeExporter ServiceMonitor
+  nodeExporter:
     enabled: true
     interval: "30s"
 
