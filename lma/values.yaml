@@ -3,6 +3,8 @@ prometheus:
 
 serviceMonitor:
   enabled: true
+
+  ## PocessExporter ServiceMonitor
   processExporter:
     enabled: true
     ### interval for scrape
@@ -10,6 +12,26 @@ serviceMonitor:
     jobLabel: "process-exporter"
     metricRelabelings: []
     relabelings: []
+
+  ## Ceph ServiceMonitor
+  ceph:
+    enabled: true
+    interval: "30s"
+    # Default port is 9283.
+    # mon_port:
+
+    mon_hosts:
+    - ip: 192.168.97.118
+
+  ## KubeStateMetrics ServiceMonitor
+  kubeStateMetrics:
+    enabled: true
+    interval: "30s"
+
+  ## NodeExporter ServiceMonitor
+  nodeExporter:
+    enabled: true
+    interval: "30s"
 
   grafana:
     enabled: true

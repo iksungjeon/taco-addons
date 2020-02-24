@@ -9,7 +9,7 @@ spec:
   jobLabel: {{ .Values.serviceMonitor.processExporter.jobLabel }}
   selector:
     matchLabels:
-      appplication: process-exporter
+      application: process_exporter
       component: metrics
   endpoints:
   - port: metrics

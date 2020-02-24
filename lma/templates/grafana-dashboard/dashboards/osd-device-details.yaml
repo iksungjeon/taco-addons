@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: grafana-dashboard-ods-device-details
+  name: grafana-dashboard-osd-device-details
   namespace: {{ .Values.grafanaDashboard.namespace }}
   labels:
     {{- if $.Values.grafanaDashboard.sidecar.dashboards.label }}
