@@ -56,7 +56,7 @@ grafanaDashboard:
 
 metricbeat:
   enabled: true
-  image: docker.elastic.co/beats/metricbeat:7.4.2
+  image: sktdev/metricbeat:taco-1.0.0
 
   ### metricbeat loglevel
   loglevel: info
