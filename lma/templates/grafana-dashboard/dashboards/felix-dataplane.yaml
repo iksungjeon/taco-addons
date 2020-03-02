@@ -124,7 +124,7 @@ data:
               "expr": "felix_active_local_endpoints{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -216,7 +216,7 @@ data:
               "expr": "felix_active_local_policies{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -308,7 +308,7 @@ data:
               "expr": "felix_active_local_selectors{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -400,7 +400,7 @@ data:
               "expr": "felix_active_local_tags{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -492,7 +492,7 @@ data:
               "expr": "felix_cluster_num_host_endpoints{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -584,7 +584,7 @@ data:
               "expr": "felix_cluster_num_workload_endpoints{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -676,7 +676,7 @@ data:
               "expr": "felix_cluster_num_hosts{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -768,7 +768,7 @@ data:
               "expr": "felix_ipsets_calico{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -860,7 +860,7 @@ data:
               "expr": "felix_iptables_chains{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -952,7 +952,7 @@ data:
               "expr": "felix_ipset_errors{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -1041,7 +1041,7 @@ data:
               "expr": "felix_iptables_save_errors{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -1130,7 +1130,7 @@ data:
               "expr": "felix_iptables_restore_errors{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -1219,7 +1219,7 @@ data:
               "expr": "felix_resyncs_started{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }
@@ -1308,7 +1308,7 @@ data:
               "expr": "felix_int_dataplane_failures{taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{instance}}",
+              "legendFormat": "{{`{{instance}}`}}",
               "refId": "A",
               "step": 20
             }

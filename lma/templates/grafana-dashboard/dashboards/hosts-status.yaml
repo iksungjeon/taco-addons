@@ -380,7 +380,7 @@ data:
               "instant": true,
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "{{ node }}",
+              "legendFormat": "{{`{{ node }}`}}",
               "refId": "A"
             },
             {
@@ -388,7 +388,7 @@ data:
               "format": "table",
               "instant": true,
               "intervalFactor": 1,
-              "legendFormat": "{{ node }}",
+              "legendFormat": "{{`{{ node }}`}}",
               "refId": "B"
             }
           ],
@@ -679,7 +679,7 @@ data:
               "instant": true,
               "interval": "15m",
               "intervalFactor": 2,
-              "legendFormat": "cAdvisor  Version: {{cadvisorVersion}}",
+              "legendFormat": "cAdvisor  Version: {{`{{cadvisorVersion}}`}}",
               "refId": "A"
             },
             {
@@ -689,7 +689,7 @@ data:
               "instant": true,
               "interval": "15m",
               "intervalFactor": 2,
-              "legendFormat": "Prometheus Version: {{version}}",
+              "legendFormat": "Prometheus Version: {{`{{version}}`}}",
               "refId": "B"
             },
             {
@@ -699,7 +699,7 @@ data:
               "instant": true,
               "interval": "15m",
               "intervalFactor": 2,
-              "legendFormat": "Node-Exporter Version: {{version}}",
+              "legendFormat": "Node-Exporter Version: {{`{{version}}`}}",
               "refId": "C"
             }
           ],

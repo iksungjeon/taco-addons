@@ -983,7 +983,7 @@ data:
               "expr": "sum(namespace_pod_container:container_cpu_usage_seconds_total:sum_rate{taco_cluster=~\"$taco_cluster\"}) by (namespace)",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{namespace}}",
+              "legendFormat": "{{`{{namespace}}`}}",
               "legendLink": null,
               "refId": "A",
               "step": 10
@@ -992,7 +992,7 @@ data:
               "expr": "sum(namespace:kube_pod_container_resource_requests_cpu_cores:sum{taco_cluster=~\"$taco_cluster\"}) by (namespace)",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{namespace}}",
+              "legendFormat": "{{`{{namespace}}`}}",
               "legendLink": null,
               "refId": "B",
               "step": 10
@@ -1376,7 +1376,7 @@ data:
               "expr": "sum(container_memory_rss{taco_cluster=~\"$taco_cluster\", container!=\"\"}) by (namespace)",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{namespace}}",
+              "legendFormat": "{{`{{namespace}}`}}",
               "legendLink": null,
               "refId": "A",
               "step": 10

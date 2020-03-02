@@ -215,7 +215,7 @@ data:
               "expr": "sum(avg(kube_pod_status_phase{namespace=~\"$namespace\",pod=~\"$pod\"}) by(namespace, pod, phase)) by(phase)",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{ phase }}",
+              "legendFormat": "{{`{{ phase }}`}}",
               "refId": "A",
               "step": 2
             }
@@ -313,7 +313,7 @@ data:
               "format": "time_series",
               "hide": false,
               "intervalFactor": 2,
-              "legendFormat": "{{ container }}",
+              "legendFormat": "{{`{{ container }}`}}",
               "refId": "A",
               "step": 2
             }
@@ -508,7 +508,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 2,
-              "legendFormat": "Current: {{ container_name }}",
+              "legendFormat": "Current: {{`{{ container_name }}`}}",
               "refId": "A",
               "step": 2
             },
@@ -516,7 +516,7 @@ data:
               "expr": "kube_pod_container_resource_requests_cpu_cores{pod=~\"$pod\", container=~\"$container\", container!=\"POD\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "Requested: {{ container }}",
+              "legendFormat": "Requested: {{`{{ container }}`}}",
               "refId": "B",
               "step": 2
             },
@@ -524,7 +524,7 @@ data:
               "expr": "kube_pod_container_resource_limits_cpu_cores{pod=~\"$pod\", container=~\"$container\", container!=\"POD\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "Limit: {{ container }}",
+              "legendFormat": "Limit: {{`{{ container }}`}}",
               "refId": "C",
               "step": 2
             }
@@ -707,7 +707,7 @@ data:
               "hide": false,
               "interval": "10s",
               "intervalFactor": 1,
-              "legendFormat": "Current: {{ container_name }}",
+              "legendFormat": "Current: {{`{{ container_name }}`}}",
               "metric": "container_memory_usage_bytes",
               "refId": "A",
               "step": 10
@@ -718,7 +718,7 @@ data:
               "hide": false,
               "interval": "10s",
               "intervalFactor": 2,
-              "legendFormat": "Requested: {{ container }}",
+              "legendFormat": "Requested: {{`{{ container }}`}}",
               "metric": "kube_pod_container_resource_requests_memory_bytes",
               "refId": "B",
               "step": 20
@@ -728,7 +728,7 @@ data:
               "format": "time_series",
               "interval": "10s",
               "intervalFactor": 2,
-              "legendFormat": "Limit: {{ container }}",
+              "legendFormat": "Limit: {{`{{ container }}`}}",
               "metric": "kube_pod_container_resource_limits_memory_bytes",
               "refId": "C",
               "step": 20
@@ -910,7 +910,7 @@ data:
               "expr": "rate (container_network_transmit_bytes_total{pod_name=~\"$pod\",interface=~\"eth0|ens.*\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "TX : {{ pod_name }}",
+              "legendFormat": "TX : {{`{{ pod_name }}`}}",
               "refId": "A",
               "step": 2
             },
@@ -918,7 +918,7 @@ data:
               "expr": "rate (container_network_receive_bytes_total{pod_name=~\"$pod\",interface=~\"eth0|ens.*\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "RX : {{ pod_name }}",
+              "legendFormat": "RX : {{`{{ pod_name }}`}}",
               "refId": "B",
               "step": 2
             }

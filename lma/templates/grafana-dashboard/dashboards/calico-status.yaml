@@ -258,7 +258,7 @@ data:
               "expr": "go_memstats_alloc_bytes{job=\"$job\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "bytes allocated ({{pod}})",
+              "legendFormat": "bytes allocated ({{`{{pod}}`}})",
               "refId": "A"
             },
             {
@@ -272,14 +272,14 @@ data:
               "expr": "go_memstats_stack_inuse_bytes{job=\"$job\", taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "stack inuse ({{pod}})",
+              "legendFormat": "stack inuse ({{`{{pod}}`}})",
               "refId": "C"
             },
             {
               "expr": "go_memstats_stack_inuse_bytes{job=\"$job\", taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "heap inuse ({{pod}})",
+              "legendFormat": "heap inuse ({{`{{pod}}`}})",
               "refId": "D"
             }
           ],

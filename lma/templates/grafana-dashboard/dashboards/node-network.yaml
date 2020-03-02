@@ -149,7 +149,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive",
+              "legendFormat": "{{`{{device}}`}} - Receive",
               "refId": "O",
               "step": 4
             },
@@ -158,7 +158,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit",
+              "legendFormat": "{{`{{device}}`}} - Transmit",
               "refId": "P",
               "step": 4
             },
@@ -166,7 +166,7 @@ data:
               "expr": "irate(node_network_receive_packets_total{instance=~\"$server\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive",
+              "legendFormat": "{{`{{device}}`}} - Receive",
               "refId": "A",
               "step": 4
             },
@@ -174,7 +174,7 @@ data:
               "expr": "irate(node_network_transmit_packets_total{instance=~\"$server\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit",
+              "legendFormat": "{{`{{device}}`}} - Transmit",
               "refId": "B",
               "step": 4
             }
@@ -306,7 +306,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive errors",
+              "legendFormat": "{{`{{device}}`}} - Receive errors",
               "refId": "E",
               "step": 4
             },
@@ -315,7 +315,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit errors",
+              "legendFormat": "{{`{{device}}`}} - Transmit errors",
               "refId": "F",
               "step": 4
             },
@@ -324,7 +324,7 @@ data:
               "format": "time_series",
               "hide": false,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive errors",
+              "legendFormat": "{{`{{device}}`}} - Receive errors",
               "refId": "A",
               "step": 4
             },
@@ -333,7 +333,7 @@ data:
               "format": "time_series",
               "hide": false,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit errors",
+              "legendFormat": "{{`{{device}}`}} - Transmit errors",
               "refId": "B",
               "step": 4
             }
@@ -465,7 +465,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive drop",
+              "legendFormat": "{{`{{device}}`}} - Receive drop",
               "refId": "G",
               "step": 4
             },
@@ -474,7 +474,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit drop",
+              "legendFormat": "{{`{{device}}`}} - Transmit drop",
               "refId": "H",
               "step": 4
             },
@@ -482,7 +482,7 @@ data:
               "expr": "irate(node_network_receive_drop_total{instance=~\"$server\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive drop",
+              "legendFormat": "{{`{{device}}`}} - Receive drop",
               "refId": "A",
               "step": 4
             },
@@ -490,7 +490,7 @@ data:
               "expr": "irate(node_network_transmit_drop_total{instance=~\"$server\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit drop",
+              "legendFormat": "{{`{{device}}`}} - Transmit drop",
               "refId": "B",
               "step": 4
             }
@@ -622,7 +622,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive compressed",
+              "legendFormat": "{{`{{device}}`}} - Receive compressed",
               "refId": "C",
               "step": 4
             },
@@ -631,7 +631,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit compressed",
+              "legendFormat": "{{`{{device}}`}} - Transmit compressed",
               "refId": "D",
               "step": 4
             },
@@ -639,7 +639,7 @@ data:
               "expr": "irate(node_network_receive_compressed_total{instance=~\"$server\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive compressed",
+              "legendFormat": "{{`{{device}}`}} - Receive compressed",
               "refId": "A",
               "step": 4
             },
@@ -647,7 +647,7 @@ data:
               "expr": "irate(node_network_transmit_compressed_total{instance=~\"$server\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit compressed",
+              "legendFormat": "{{`{{device}}`}} - Transmit compressed",
               "refId": "B",
               "step": 4
             }
@@ -779,7 +779,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive multicast",
+              "legendFormat": "{{`{{device}}`}} - Receive multicast",
               "refId": "M",
               "step": 4
             },
@@ -787,21 +787,21 @@ data:
               "expr": "irate(node_network_transmit_multicast{instance=~\"$server\"}[5m])",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit multicast",
+              "legendFormat": "{{`{{device}}`}} - Transmit multicast",
               "refId": "A"
             },
             {
               "expr": "irate(node_network_receive_multicast_total{instance=~\"$server\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive multicast",
+              "legendFormat": "{{`{{device}}`}} - Receive multicast",
               "refId": "B",
               "step": 4
             },
             {
               "expr": "irate(node_network_transmit_multicast_total{instance=~\"$server\"}[5m])",
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit multicast",
+              "legendFormat": "{{`{{device}}`}} - Transmit multicast",
               "refId": "C"
             }
           ],
@@ -932,7 +932,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive fifo",
+              "legendFormat": "{{`{{device}}`}} - Receive fifo",
               "refId": "I",
               "step": 4
             },
@@ -941,7 +941,7 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit fifo",
+              "legendFormat": "{{`{{device}}`}} - Transmit fifo",
               "refId": "J",
               "step": 4
             },
@@ -949,7 +949,7 @@ data:
               "expr": "irate(node_network_receive_fifo_total{instance=~\"$server\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive fifo",
+              "legendFormat": "{{`{{device}}`}} - Receive fifo",
               "refId": "A",
               "step": 4
             },
@@ -957,7 +957,7 @@ data:
               "expr": "irate(node_network_transmit_fifo_total{instance=~\"$server\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Transmit fifo",
+              "legendFormat": "{{`{{device}}`}} - Transmit fifo",
               "refId": "B",
               "step": 4
             }
@@ -1089,14 +1089,14 @@ data:
               "format": "time_series",
               "hide": true,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive frame",
+              "legendFormat": "{{`{{device}}`}} - Receive frame",
               "refId": "K",
               "step": 4
             },
             {
               "expr": "irate(node_network_transmit_frame{instance=~\"$server\"}[5m])",
               "hide": true,
-              "legendFormat": "{{device}} - Transmit frame",
+              "legendFormat": "{{`{{device}}`}} - Transmit frame",
               "refId": "A"
             },
             {
@@ -1104,13 +1104,13 @@ data:
               "format": "time_series",
               "hide": false,
               "intervalFactor": 2,
-              "legendFormat": "{{device}} - Receive frame",
+              "legendFormat": "{{`{{device}}`}} - Receive frame",
               "refId": "B",
               "step": 4
             },
             {
               "expr": "irate(node_network_transmit_frame_total{instance=~\"$server\"}[5m])",
-              "legendFormat": "{{device}} - Transmit frame",
+              "legendFormat": "{{`{{device}}`}} - Transmit frame",
               "refId": "C"
             }
           ],
@@ -1309,7 +1309,7 @@ data:
               "expr": "node_arp_entries{instance=~\"$server\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{ device }} - ARP entries",
+              "legendFormat": "{{`{{ device }}`}} - ARP entries",
               "refId": "A",
               "step": 4
             }
