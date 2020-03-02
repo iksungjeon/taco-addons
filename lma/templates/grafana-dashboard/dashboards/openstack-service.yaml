@@ -69,7 +69,7 @@ data:
       "links": [],
       "panels": [
         {
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "gridPos": {
             "h": 1,
             "w": 24,
@@ -85,7 +85,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -183,7 +183,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -279,7 +279,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -375,7 +375,7 @@ data:
           "bars": true,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -462,7 +462,7 @@ data:
           }
         },
         {
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "gridPos": {
             "h": 1,
             "w": 24,
@@ -482,7 +482,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#299c46"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -581,7 +581,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#299c46"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -679,7 +679,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#299c46"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -777,7 +777,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#299c46"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -873,7 +873,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#299c46"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -969,7 +969,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#299c46"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1061,7 +1061,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1231,7 +1231,7 @@ data:
         },
         {
           "collapsed": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "gridPos": {
             "h": 1,
             "w": 24,
@@ -1252,7 +1252,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#299c46"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1348,7 +1348,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#d44a3a"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1434,7 +1434,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#d44a3a"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1516,7 +1516,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#d44a3a"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1591,7 +1591,7 @@ data:
         },
         {
           "collapsed": true,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "gridPos": {
             "h": 1,
             "w": 24,
@@ -1612,7 +1612,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#299c46"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1709,7 +1709,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#299c46"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "decimals": null,
           "format": "none",
           "gauge": {
@@ -1802,7 +1802,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "#299c46"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -1901,7 +1901,7 @@ data:
           {
             "allValue": null,
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "$datasource",
             "definition": "label_values(up, taco_cluster)",
             "hide": 0,
             "includeAll": false,
@@ -1923,7 +1923,7 @@ data:
           {
             "allValue": "region=RegionOne",
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "$datasource",
             "definition": "label_values(openstack_exporter_cache_refresh_duration_seconds, region)",
             "hide": 0,
             "includeAll": false,

@@ -73,7 +73,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -193,7 +193,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "decimals": null,
           "description": "Busy state of all CPU cores together",
           "format": "percent",
@@ -290,7 +290,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "decimals": 0,
           "description": "Non available RAM memory",
           "format": "percent",
@@ -379,7 +379,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "decimals": null,
           "description": "Used Swap",
           "format": "percent",
@@ -473,7 +473,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "decimals": null,
           "description": "Used Root FS",
           "format": "percent",
@@ -566,7 +566,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "decimals": null,
           "description": "Busy state of all CPU cores together (1 min average)",
           "format": "percent",
@@ -660,7 +660,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "description": "Total number of CPU cores",
           "format": "short",
           "gauge": {
@@ -753,7 +753,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "decimals": 2,
           "description": "Total RAM",
           "format": "bytes",
@@ -847,7 +847,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "decimals": 2,
           "description": "Total SWAP",
           "format": "bytes",
@@ -939,7 +939,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "decimals": null,
           "description": "Total RootFS",
           "format": "bytes",
@@ -1033,7 +1033,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "decimals": 1,
           "description": "System uptime",
           "format": "s",
@@ -1122,7 +1122,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -1303,7 +1303,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "editable": true,
           "format": "percent",
           "gauge": {
@@ -1394,7 +1394,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -1555,7 +1555,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(245, 54, 54, 0.9)"
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "editable": true,
           "format": "percentunit",
           "gauge": {
@@ -1645,7 +1645,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -1759,7 +1759,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -1878,7 +1878,7 @@ data:
           {
             "allValue": null,
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "$datasource",
             "definition": "label_values(up, taco_cluster)",
             "hide": 0,
             "includeAll": false,
@@ -1900,7 +1900,7 @@ data:
           {
             "allValue": null,
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "$datasource",
             "definition": "label_values(node_boot_time_seconds{taco_cluster=~\"$taco_cluster\"}, instance)",
             "hide": 0,
             "includeAll": false,

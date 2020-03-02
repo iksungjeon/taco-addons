@@ -75,7 +75,7 @@ data:
       "links": [],
       "panels": [
         {
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "gridPos": {
             "h": 1,
             "w": 24,
@@ -99,7 +99,7 @@ data:
           ],
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "format": "percentunit",
           "gauge": {
@@ -239,7 +239,7 @@ data:
           ],
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "format": "percentunit",
           "gauge": {
@@ -379,7 +379,7 @@ data:
           ],
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "format": "percentunit",
           "gauge": {
@@ -519,7 +519,7 @@ data:
           ],
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "format": "percentunit",
           "gauge": {
@@ -659,7 +659,7 @@ data:
           ],
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "format": "percentunit",
           "gauge": {
@@ -799,7 +799,7 @@ data:
           ],
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "format": "percentunit",
           "gauge": {
@@ -927,7 +927,7 @@ data:
           ]
         },
         {
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "gridPos": {
             "h": 1,
             "w": 24,
@@ -943,7 +943,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 5,
           "fillGradient": 0,
           "gridPos": {
@@ -1045,7 +1045,7 @@ data:
           "columns": [],
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "fontSize": "100%",
           "gridPos": {
@@ -1319,7 +1319,7 @@ data:
         },
         {
           "collapsed": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "gridPos": {
             "h": 1,
             "w": 24,
@@ -1336,7 +1336,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 10,
           "fillGradient": 0,
           "gridPos": {
@@ -1429,7 +1429,7 @@ data:
           "columns": [],
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 1,
           "fontSize": "100%",
           "gridPos": {
@@ -1711,7 +1711,7 @@ data:
           {
             "allValue": null,
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "$datasource",
             "definition": "label_values(up, taco_cluster)",
             "hide": 0,
             "includeAll": false,

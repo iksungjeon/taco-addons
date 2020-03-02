@@ -72,7 +72,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 2,
           "fillGradient": 0,
           "gridPos": {
@@ -225,7 +225,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 2,
           "fillGradient": 0,
           "gridPos": {
@@ -384,7 +384,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 2,
           "fillGradient": 0,
           "gridPos": {
@@ -541,7 +541,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 2,
           "fillGradient": 0,
           "gridPos": {
@@ -698,7 +698,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 2,
           "fillGradient": 0,
           "gridPos": {
@@ -851,7 +851,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 2,
           "fillGradient": 0,
           "gridPos": {
@@ -1008,7 +1008,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 2,
           "fillGradient": 0,
           "gridPos": {
@@ -1160,7 +1160,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 2,
           "fillGradient": 0,
           "gridPos": {
@@ -1267,7 +1267,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fill": 2,
           "fillGradient": 0,
           "gridPos": {
@@ -1365,7 +1365,7 @@ data:
           {
             "allValue": null,
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "$datasource",
             "definition": "label_values(up, taco_cluster)",
             "hide": 0,
             "includeAll": false,
@@ -1387,7 +1387,7 @@ data:
           {
             "allValue": null,
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "$datasource",
             "definition": "label_values(node_uname_info{taco_cluster=~\"$taco_cluster\"},  instance)",
             "hide": 0,
             "includeAll": false,

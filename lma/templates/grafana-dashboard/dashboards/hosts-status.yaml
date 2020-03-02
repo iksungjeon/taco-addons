@@ -64,7 +64,7 @@ data:
       "panels": [
         {
           "columns": [],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fontSize": "100%",
           "gridPos": {
             "h": 7,
@@ -247,7 +247,7 @@ data:
               "value": "avg"
             }
           ],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "description": "",
           "fontSize": "100%",
           "gridPos": {
@@ -400,7 +400,7 @@ data:
         },
         {
           "columns": [],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fontSize": "100%",
           "gridPos": {
             "h": 7,
@@ -581,7 +581,7 @@ data:
         },
         {
           "columns": [],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fontSize": "100%",
           "gridPos": {
             "h": 8,
@@ -709,7 +709,7 @@ data:
         },
         {
           "columns": [],
-          "datasource": "${DS_PROMETHEUS}",
+          "datasource": "$datasource",
           "fontSize": "100%",
           "gridPos": {
             "h": 7,
@@ -854,7 +854,7 @@ data:
           {
             "allValue": null,
             "current": {},
-            "datasource": "${DS_PROMETHEUS}",
+            "datasource": "$datasource",
             "definition": "label_values(up, taco_cluster)",
             "hide": 0,
             "includeAll": false,
