@@ -852,6 +852,23 @@ data:
       "templating": {
         "list": [
           {
+            "current": {
+              "text": "Prometheus",
+              "value": "Prometheus"
+            },
+            "hide": 0,
+            "includeAll": false,
+            "label": null,
+            "multi": false,
+            "name": "datasource",
+            "options": [],
+            "query": "prometheus",
+            "refresh": 1,
+            "regex": "",
+            "skipUrlSync": false,
+            "type": "datasource"
+          },
+          {
             "allValue": null,
             "current": {},
             "datasource": "$datasource",
