@@ -27,5 +27,5 @@ spec:
     - {{ $.Release.Namespace }}
   selector:
     matchLabels:
-      app.kubernetes.io/name: kube-state-metrics
+      app: kube-state-metrics
 {{- end }}
