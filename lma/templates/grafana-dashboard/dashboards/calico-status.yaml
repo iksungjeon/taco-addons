@@ -161,7 +161,7 @@ data:
           "tableColumn": "",
           "targets": [
             {
-              "expr": "kube_pod_info{job=\"kube-state-metrics\", created_by_name=\"calico-node\", node=\"$hosts\", taco_cluster=\"$taco_cluster\"}",
+              "expr": "kube_pod_info{job=\"lma-kube-state-metrics\", created_by_name=\"calico-node\", node=\"$hosts\", taco_cluster=\"$taco_cluster\"}",
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
