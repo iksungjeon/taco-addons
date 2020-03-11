@@ -1,0 +1,15 @@
+apiVersion: 1
+
+datasources:
+  - name: jmeterdb
+    type: influxdb
+    access: proxy
+    database: jmeter
+    user: admin
+    isDefault: true
+    url: http://192.168.97.61:8086
+    jsonData:
+      timeInterval: "10s"
+    secureJsonData:
+      password: admin
+

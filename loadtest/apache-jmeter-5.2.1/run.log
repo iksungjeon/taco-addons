@@ -1,0 +1,164 @@
+2020-03-11 01:06:20,628 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2020-03-11 01:06:20,646 INFO o.a.j.JMeter: Loading user properties from: /root/taco-addons/loadtest/apache-jmeter-5.2.1/bin/user.properties
+2020-03-11 01:06:20,646 INFO o.a.j.JMeter: Loading system properties from: /root/taco-addons/loadtest/apache-jmeter-5.2.1/bin/system.properties
+2020-03-11 01:06:20,648 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2020-03-11 01:06:20,648 INFO o.a.j.JMeter: Version 5.2.1
+2020-03-11 01:06:20,648 INFO o.a.j.JMeter: java.version=1.8.0_242
+2020-03-11 01:06:20,648 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2020-03-11 01:06:20,648 INFO o.a.j.JMeter: os.name=Linux
+2020-03-11 01:06:20,648 INFO o.a.j.JMeter: os.arch=amd64
+2020-03-11 01:06:20,648 INFO o.a.j.JMeter: os.version=3.10.0-957.27.2.el7.x86_64
+2020-03-11 01:06:20,648 INFO o.a.j.JMeter: file.encoding=ANSI_X3.4-1968
+2020-03-11 01:06:20,648 INFO o.a.j.JMeter: java.awt.headless=true
+2020-03-11 01:06:20,649 INFO o.a.j.JMeter: Max memory     =1073741824
+2020-03-11 01:06:20,649 INFO o.a.j.JMeter: Available Processors =8
+2020-03-11 01:06:20,654 INFO o.a.j.JMeter: Default Locale=English (EN)
+2020-03-11 01:06:20,654 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2020-03-11 01:06:20,655 INFO o.a.j.JMeter: JMeterHome=/root/taco-addons/loadtest/apache-jmeter-5.2.1
+2020-03-11 01:06:20,655 INFO o.a.j.JMeter: user.dir  =/root/taco-addons/loadtest/apache-jmeter-5.2.1
+2020-03-11 01:06:20,655 INFO o.a.j.JMeter: PWD       =/root/taco-addons/loadtest/apache-jmeter-5.2.1
+2020-03-11 01:06:20,655 INFO o.a.j.JMeter: IP: 192.168.97.61 Name: skb-ex1 FullName: skb-ex1
+2020-03-11 01:06:20,661 INFO o.a.j.s.FileServer: Default base='/root/taco-addons/loadtest/apache-jmeter-5.2.1'
+2020-03-11 01:06:20,668 INFO o.a.j.s.FileServer: Set new base='/root/taco-addons/loadtest/apache-jmeter-5.2.1'
+2020-03-11 01:06:20,829 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-03-11 01:06:20,839 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-03-11 01:06:20,845 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-03-11 01:06:20,855 INFO o.a.j.s.SaveService: Loading file: jmeter-app-test.jmx
+2020-03-11 01:06:20,916 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-03-11 01:06:20,916 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-03-11 01:06:20,916 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-03-11 01:06:20,916 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-03-11 01:06:20,916 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-03-11 01:06:20,917 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-03-11 01:06:20,941 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2020-03-11 01:06:20,941 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2020-03-11 01:06:20,941 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2020-03-11 01:06:20,941 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2020-03-11 01:06:20,957 INFO o.a.j.JMeter: Creating summariser <summary>
+2020-03-11 01:06:20,964 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-03-11 01:06:20,965 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-03-11 01:06:20,965 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-03-11 01:06:20,971 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2020-03-11 01:06:20,971 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2020-03-11 01:06:21,390 INFO o.a.j.v.b.BackendListener: Backend Listener: Starting worker with class: class org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient and queue capacity: 5000
+2020-03-11 01:06:21,392 INFO o.a.j.v.b.BackendListener: Backend Listener: Started  worker with class: class org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient
+2020-03-11 01:06:21,621 INFO o.a.j.JMeter: Running test (1583888781621)
+2020-03-11 01:06:21,690 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
+2020-03-11 01:06:21,691 INFO o.a.j.e.StandardJMeterEngine: Starting 100 threads for group Users.
+2020-03-11 01:06:21,691 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-03-11 01:06:21,691 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=100 ramp-up=1 delayedStart=false
+2020-03-11 01:06:21,704 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
+2020-03-11 01:06:21,708 INFO o.a.j.t.JMeterThread: Thread started: Users 1-2
+2020-03-11 01:06:21,716 INFO o.a.j.t.JMeterThread: Thread started: Users 1-3
+2020-03-11 01:06:21,726 INFO o.a.j.t.JMeterThread: Thread started: Users 1-4
+2020-03-11 01:06:21,736 INFO o.a.j.t.JMeterThread: Thread started: Users 1-5
+2020-03-11 01:06:21,744 INFO o.a.j.t.JMeterThread: Thread started: Users 1-6
+2020-03-11 01:06:21,750 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = skb-ex1
+2020-03-11 01:06:21,751 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-03-11 01:06:21,751 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-03-11 01:06:21,754 INFO o.a.j.t.JMeterThread: Thread started: Users 1-7
+2020-03-11 01:06:21,758 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2020-03-11 01:06:21,763 INFO o.a.j.t.JMeterThread: Thread started: Users 1-8
+2020-03-11 01:06:21,772 INFO o.a.j.t.JMeterThread: Thread started: Users 1-9
+2020-03-11 01:06:21,782 INFO o.a.j.t.JMeterThread: Thread started: Users 1-10
+2020-03-11 01:06:21,792 INFO o.a.j.t.JMeterThread: Thread started: Users 1-11
+2020-03-11 01:06:21,802 INFO o.a.j.t.JMeterThread: Thread started: Users 1-12
+2020-03-11 01:06:21,812 INFO o.a.j.t.JMeterThread: Thread started: Users 1-13
+2020-03-11 01:06:21,822 INFO o.a.j.t.JMeterThread: Thread started: Users 1-14
+2020-03-11 01:06:21,832 INFO o.a.j.t.JMeterThread: Thread started: Users 1-15
+2020-03-11 01:06:21,842 INFO o.a.j.t.JMeterThread: Thread started: Users 1-16
+2020-03-11 01:06:21,852 INFO o.a.j.t.JMeterThread: Thread started: Users 1-17
+2020-03-11 01:06:21,862 INFO o.a.j.t.JMeterThread: Thread started: Users 1-18
+2020-03-11 01:06:21,872 INFO o.a.j.t.JMeterThread: Thread started: Users 1-19
+2020-03-11 01:06:21,882 INFO o.a.j.t.JMeterThread: Thread started: Users 1-20
+2020-03-11 01:06:21,892 INFO o.a.j.t.JMeterThread: Thread started: Users 1-21
+2020-03-11 01:06:21,903 INFO o.a.j.t.JMeterThread: Thread started: Users 1-22
+2020-03-11 01:06:21,914 INFO o.a.j.t.JMeterThread: Thread started: Users 1-23
+2020-03-11 01:06:21,922 INFO o.a.j.t.JMeterThread: Thread started: Users 1-24
+2020-03-11 01:06:21,932 INFO o.a.j.t.JMeterThread: Thread started: Users 1-25
+2020-03-11 01:06:21,942 INFO o.a.j.t.JMeterThread: Thread started: Users 1-26
+2020-03-11 01:06:21,952 INFO o.a.j.t.JMeterThread: Thread started: Users 1-27
+2020-03-11 01:06:21,962 INFO o.a.j.t.JMeterThread: Thread started: Users 1-28
+2020-03-11 01:06:21,971 INFO o.a.j.t.JMeterThread: Thread started: Users 1-29
+2020-03-11 01:06:21,982 INFO o.a.j.t.JMeterThread: Thread started: Users 1-30
+2020-03-11 01:06:21,993 INFO o.a.j.t.JMeterThread: Thread started: Users 1-31
+2020-03-11 01:06:22,002 INFO o.a.j.t.JMeterThread: Thread started: Users 1-32
+2020-03-11 01:06:22,013 INFO o.a.j.t.JMeterThread: Thread started: Users 1-33
+2020-03-11 01:06:22,022 INFO o.a.j.t.JMeterThread: Thread started: Users 1-34
+2020-03-11 01:06:22,032 INFO o.a.j.t.JMeterThread: Thread started: Users 1-35
+2020-03-11 01:06:22,042 INFO o.a.j.t.JMeterThread: Thread started: Users 1-36
+2020-03-11 01:06:22,052 INFO o.a.j.t.JMeterThread: Thread started: Users 1-37
+2020-03-11 01:06:22,063 INFO o.a.j.t.JMeterThread: Thread started: Users 1-38
+2020-03-11 01:06:22,072 INFO o.a.j.t.JMeterThread: Thread started: Users 1-39
+2020-03-11 01:06:22,082 INFO o.a.j.t.JMeterThread: Thread started: Users 1-40
+2020-03-11 01:06:22,092 INFO o.a.j.t.JMeterThread: Thread started: Users 1-41
+2020-03-11 01:06:22,102 INFO o.a.j.t.JMeterThread: Thread started: Users 1-42
+2020-03-11 01:06:22,112 INFO o.a.j.t.JMeterThread: Thread started: Users 1-43
+2020-03-11 01:06:22,122 INFO o.a.j.t.JMeterThread: Thread started: Users 1-44
+2020-03-11 01:06:22,133 INFO o.a.j.t.JMeterThread: Thread started: Users 1-45
+2020-03-11 01:06:22,143 INFO o.a.j.t.JMeterThread: Thread started: Users 1-46
+2020-03-11 01:06:22,152 INFO o.a.j.t.JMeterThread: Thread started: Users 1-47
+2020-03-11 01:06:22,162 INFO o.a.j.t.JMeterThread: Thread started: Users 1-48
+2020-03-11 01:06:22,173 INFO o.a.j.t.JMeterThread: Thread started: Users 1-49
+2020-03-11 01:06:22,182 INFO o.a.j.t.JMeterThread: Thread started: Users 1-50
+2020-03-11 01:06:22,192 INFO o.a.j.t.JMeterThread: Thread started: Users 1-51
+2020-03-11 01:06:22,202 INFO o.a.j.t.JMeterThread: Thread started: Users 1-52
+2020-03-11 01:06:22,213 INFO o.a.j.t.JMeterThread: Thread started: Users 1-53
+2020-03-11 01:06:22,223 INFO o.a.j.t.JMeterThread: Thread started: Users 1-54
+2020-03-11 01:06:22,233 INFO o.a.j.t.JMeterThread: Thread started: Users 1-55
+2020-03-11 01:06:22,242 INFO o.a.j.t.JMeterThread: Thread started: Users 1-56
+2020-03-11 01:06:22,252 INFO o.a.j.t.JMeterThread: Thread started: Users 1-57
+2020-03-11 01:06:22,262 INFO o.a.j.t.JMeterThread: Thread started: Users 1-58
+2020-03-11 01:06:22,272 INFO o.a.j.t.JMeterThread: Thread started: Users 1-59
+2020-03-11 01:06:22,282 INFO o.a.j.t.JMeterThread: Thread started: Users 1-60
+2020-03-11 01:06:22,291 INFO o.a.j.t.JMeterThread: Thread started: Users 1-61
+2020-03-11 01:06:22,302 INFO o.a.j.t.JMeterThread: Thread started: Users 1-62
+2020-03-11 01:06:22,312 INFO o.a.j.t.JMeterThread: Thread started: Users 1-63
+2020-03-11 01:06:22,321 INFO o.a.j.t.JMeterThread: Thread started: Users 1-64
+2020-03-11 01:06:22,351 INFO o.a.j.t.JMeterThread: Thread started: Users 1-67
+2020-03-11 01:06:22,352 INFO o.a.j.t.JMeterThread: Thread started: Users 1-66
+2020-03-11 01:06:22,359 INFO o.a.j.t.JMeterThread: Thread started: Users 1-65
+2020-03-11 01:06:22,366 INFO o.a.j.t.JMeterThread: Thread started: Users 1-68
+2020-03-11 01:06:22,374 INFO o.a.j.t.JMeterThread: Thread started: Users 1-69
+2020-03-11 01:06:22,387 INFO o.a.j.t.JMeterThread: Thread started: Users 1-70
+2020-03-11 01:06:22,393 INFO o.a.j.t.JMeterThread: Thread started: Users 1-71
+2020-03-11 01:06:22,402 INFO o.a.j.t.JMeterThread: Thread started: Users 1-72
+2020-03-11 01:06:22,412 INFO o.a.j.t.JMeterThread: Thread started: Users 1-73
+2020-03-11 01:06:22,422 INFO o.a.j.t.JMeterThread: Thread started: Users 1-74
+2020-03-11 01:06:22,433 INFO o.a.j.t.JMeterThread: Thread started: Users 1-75
+2020-03-11 01:06:22,442 INFO o.a.j.t.JMeterThread: Thread started: Users 1-76
+2020-03-11 01:06:22,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-77
+2020-03-11 01:06:22,462 INFO o.a.j.t.JMeterThread: Thread started: Users 1-78
+2020-03-11 01:06:22,472 INFO o.a.j.t.JMeterThread: Thread started: Users 1-79
+2020-03-11 01:06:22,481 INFO o.a.j.t.JMeterThread: Thread started: Users 1-80
+2020-03-11 01:06:22,492 INFO o.a.j.t.JMeterThread: Thread started: Users 1-81
+2020-03-11 01:06:22,502 INFO o.a.j.t.JMeterThread: Thread started: Users 1-82
+2020-03-11 01:06:22,512 INFO o.a.j.t.JMeterThread: Thread started: Users 1-83
+2020-03-11 01:06:22,521 INFO o.a.j.t.JMeterThread: Thread started: Users 1-84
+2020-03-11 01:06:22,531 INFO o.a.j.t.JMeterThread: Thread started: Users 1-85
+2020-03-11 01:06:22,546 INFO o.a.j.t.JMeterThread: Thread started: Users 1-86
+2020-03-11 01:06:22,552 INFO o.a.j.t.JMeterThread: Thread started: Users 1-87
+2020-03-11 01:06:22,562 INFO o.a.j.t.JMeterThread: Thread started: Users 1-88
+2020-03-11 01:06:22,572 INFO o.a.j.t.JMeterThread: Thread started: Users 1-89
+2020-03-11 01:06:22,582 INFO o.a.j.t.JMeterThread: Thread started: Users 1-90
+2020-03-11 01:06:22,592 INFO o.a.j.t.JMeterThread: Thread started: Users 1-91
+2020-03-11 01:06:22,602 INFO o.a.j.t.JMeterThread: Thread started: Users 1-92
+2020-03-11 01:06:22,614 INFO o.a.j.t.JMeterThread: Thread started: Users 1-93
+2020-03-11 01:06:22,621 INFO o.a.j.t.JMeterThread: Thread started: Users 1-94
+2020-03-11 01:06:22,638 INFO o.a.j.t.JMeterThread: Thread started: Users 1-95
+2020-03-11 01:06:22,648 INFO o.a.j.t.JMeterThread: Thread started: Users 1-96
+2020-03-11 01:06:22,658 INFO o.a.j.t.JMeterThread: Thread started: Users 1-97
+2020-03-11 01:06:22,662 INFO o.a.j.t.JMeterThread: Thread started: Users 1-98
+2020-03-11 01:06:22,672 INFO o.a.j.t.JMeterThread: Thread started: Users 1-99
+2020-03-11 01:06:22,682 INFO o.a.j.t.JMeterThread: Thread started: Users 1-100
+2020-03-11 01:06:30,002 INFO o.a.j.r.Summariser: summary +  18609 in 00:00:08 = 2220.9/s Avg:    41 Min:     4 Max:   232 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2020-03-11 01:07:00,002 INFO o.a.j.r.Summariser: summary +  79375 in 00:00:30 = 2645.7/s Avg:    37 Min:     3 Max:   146 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2020-03-11 01:07:00,003 INFO o.a.j.r.Summariser: summary =  97984 in 00:00:38 = 2553.0/s Avg:    38 Min:     3 Max:   232 Err:     0 (0.00%)
+2020-03-11 01:07:30,006 INFO o.a.j.r.Summariser: summary +  80280 in 00:00:30 = 2676.0/s Avg:    37 Min:     4 Max:   353 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2020-03-11 01:07:30,006 INFO o.a.j.r.Summariser: summary = 178264 in 00:01:08 = 2607.0/s Avg:    37 Min:     3 Max:   353 Err:     0 (0.00%)
+2020-03-11 01:08:00,000 INFO o.a.j.r.Summariser: summary +  80537 in 00:00:30 = 2684.7/s Avg:    37 Min:     4 Max:   140 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2020-03-11 01:08:00,001 INFO o.a.j.r.Summariser: summary = 258801 in 00:01:38 = 2630.7/s Avg:    37 Min:     3 Max:   353 Err:     0 (0.00%)
+2020-03-11 01:08:30,001 INFO o.a.j.r.Summariser: summary +  79145 in 00:00:30 = 2638.2/s Avg:    37 Min:     3 Max:   570 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2020-03-11 01:08:30,001 INFO o.a.j.r.Summariser: summary = 337946 in 00:02:08 = 2632.4/s Avg:    37 Min:     3 Max:   570 Err:     0 (0.00%)
+2020-03-11 01:08:35,393 INFO o.a.j.r.ResultCollector: Shutdown hook started
+2020-03-11 01:08:35,394 INFO o.a.j.r.ResultCollector: Shutdown hook ended
