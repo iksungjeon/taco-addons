@@ -1,11 +1,14 @@
 {{- if .Values.metricbeat.enabled }}
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: metricbeat
   labels:
     k8s-app: metricbeat
 spec:
+  selector:
+    matchLabels:
+      k8s-app: metricbeat
   template:
     metadata:
       labels:
