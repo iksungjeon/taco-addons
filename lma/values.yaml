@@ -41,6 +41,16 @@ serviceMonitor:
     metricRelabelings: []
     relabelings: []
 
+  ## It makes multiple ServiceMonitor / Endpoint / Service for each item in below array.
+  #additionalScrapeConfigs:
+  #- name: main
+  #  path: /federate
+  #  address: 192.168.97.22
+  #  port: 3000
+  #  params:
+  #    match[]:
+  #    - ''
+
 grafanaDashboard:
   enabled: true
   # namespace installed grafana
